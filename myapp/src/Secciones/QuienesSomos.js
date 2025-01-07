@@ -4,6 +4,11 @@ import quienesSomos from "../svg/quienesSomos.webp"
 
 const gradosRotacion = -20;
 
+const Container = styled.div`
+    width: 100%;
+    height: 150vh;
+`
+
 const Background = styled.div`
     z-index: 20;
     position: relative;
@@ -35,11 +40,25 @@ const Background2 = styled.div`
     background-repeat: no-repeat;
 `
 
+const Relleno = styled.div`
+    position: absolute;
+    z-index: -10;
+    background-color: black;
+    width: 100%;
+    height: 150vh;
+`
+
+
+
 
 const QuienesSomos = () => <>
-    <Background>
-        <Background2></Background2>
-    </Background>/>
+    <Container>
+        <Relleno/>
+        <Background>
+            <Background2>
+            </Background2>
+        </Background>/>
+    </Container>
     </>
 
 
